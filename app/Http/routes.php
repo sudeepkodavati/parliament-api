@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/members', 'MembersController@listMemberNames');
+Route::get('/members/{id}', 'MembersController@show');

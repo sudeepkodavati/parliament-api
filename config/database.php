@@ -55,9 +55,12 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            /*'database'  => env('DB_DATABASE', 'parliament'),
+            'username'  => env('DB_USERNAME', 'parliament'),
+            'password'  => env('DB_PASSWORD', 'parliament'),*/
+            'database'  => 'parliament',
+            'username'  => 'parliament',
+            'password'  => 'parliament',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
