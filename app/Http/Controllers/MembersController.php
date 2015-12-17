@@ -17,8 +17,9 @@ class MembersController extends Controller
      */
     public function listMemberNames()
     {
-        $memebers = Members::ListMemberNames();
-
+        header('Access-Control-Allow-Origin: *');
+        //$memebers = Members::ListMemberNames();
+        $memebers = Members::all();
         return response()->JSON($memebers);
     }
 
@@ -31,6 +32,7 @@ class MembersController extends Controller
      */
     public function show($id)
     {
+        header('Access-Control-Allow-Origin: *');
         $memeber = Members::find($id);
 
         return response()->JSON($memeber);
